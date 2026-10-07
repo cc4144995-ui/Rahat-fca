@@ -1,7 +1,7 @@
 {
-  "name": "shadowx-fca",
+  "name": "rahat-fca",
   "version": "10.8.0",
-  "description": "SHADOWX-FCA — Facebook Messenger API for Node.js — Fast, Secure, and Feature-Rich. Forked by Mueid Mursalin Rifat.",
+  "description": "RAHAT-FCA — Facebook Messenger API for Node.js — Fast, Secure, and Feature-Rich. Maintained by Rahat Khan.",
   "main": "index.js",
   "types": "index.d.ts",
   "exports": {
@@ -28,7 +28,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mueidmursalinrifat/shadowx-fca.git"
+    "url": "git+https://github.com/cc4144995-ui/Rahat-fca.git"
   },
   "keywords": [
     "facebook",
@@ -38,15 +38,14 @@
     "bot",
     "unofficial",
     "fca",
-    "shadowx-fca",
-    "mueid mursalin rifat",
+    "rahat-fca",
     "messenger-bot",
     "chatbot",
     "facebook-api"
   ],
   "author": {
-    "name": "Mueid Mursalin Rifat",
-    "url": "https://github.com/mueidmursalinrifat"
+    "name": "Rahat Khan",
+    "url": "https://github.com/cc4144995-ui"
   },
   "contributors": [
     {
@@ -60,9 +59,9 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mueidmursalinrifat/shadowx-fca/issues"
+    "url": "https://github.com/cc4144995-ui/Rahat-fca/issues"
   },
-  "homepage": "https://github.com/mueidmursalinrifat/shadowx-fca#readme",
+  "homepage": "https://github.com/cc4144995-ui/Rahat-fca#readme",
   "engines": {
     "node": ">=18.0.0"
   },
