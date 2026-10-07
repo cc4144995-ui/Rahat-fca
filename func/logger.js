@@ -102,22 +102,22 @@ function formatPrefix(type) {
   const name = String(type || "INFO").toUpperCase();
 
   if (name === "WARN") {
-    return chalk.bold.hex("#ffb000")("[ SHADOWX-FCA⚡ ]");
+    return chalk.bold.hex("#ffb000")("[ RAHAT-FCA⚡ ]");
   }
 
   if (name === "ERROR") {
-    return chalk.bold.hex("#ff3b30")("[ SHADOWX-FCA⚡ ]");
+    return chalk.bold.hex("#ff3b30")("[ RAHAT-FCA⚡ ]");
   }
 
   if (name === "SUCCESS") {
-    return chalk.bold.hex("#00ff88")("[ SHADOWX-FCA⚡ ]");
+    return chalk.bold.hex("#00ff88")("[ RAHAT-FCA⚡ ]");
   }
 
   if (name === "DEBUG") {
-    return chalk.bold.hex("#8888ff")("[ SHADOWX-FCA⚡ ]");
+    return chalk.bold.hex("#8888ff")("[ RAHAT-FCA⚡ ]");
   }
 
-  return chalk.bold(co("[ SHADOWX-FCA⚡ ]"));
+  return chalk.bold(co("[ RAHAT-FCA⚡ ]"));
 }
 
 function formatMessage(text) {
