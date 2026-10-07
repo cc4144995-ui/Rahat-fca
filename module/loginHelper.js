@@ -1143,7 +1143,7 @@ function loginHelper(appState, Cookie, email, password, globalOptions, callback)
               logger(`Database connection failed: ${errorMsg}`, "warn");
             }
           });
-        logger(chalk.italic("⚡ SHADOWX-FCA | forged by Mueid Mursalin Rifat ⚡"), "info");
+        logger(chalk.italic("⚡ RAHAT-FCA | forged by RAHAT KHAN ⚡"), "info");
         logger(chalk.italic("🛡️ Signal Protocol armed • 📡 Noise WebSocket online • 🔒 session secured"), "info");
         const emitter = new EventEmitter();
         const ctxMain = {
@@ -1303,7 +1303,7 @@ function loginHelper(appState, Cookie, email, password, globalOptions, callback)
             });
           }, 86400000);
         }
-        // ✅ shadowx-fca core features register
+        // ✅ RAHAT-FCA core features register
         try {
           const e2eeModule = require("../src/api/socket/e2ee");
           api.e2ee = new e2eeModule.E2EEBridge(ctxMain, api, defaultFuncs);
@@ -1340,7 +1340,7 @@ function loginHelper(appState, Cookie, email, password, globalOptions, callback)
           logger(`sendBroadcast init failed (non-fatal): ${e && e.message ? e.message : String(e)}`, "warn");
         }
 
-        // sendMessage override with shadowx-fca version (better MQTT + HTTP fallback)
+        // sendMessage override with RAHAT-FCA version (better MQTT + HTTP fallback)
         try {
           const fcanxSendMsg = require("../src/api/socket/sendMessage")(defaultFuncs, api, ctxMain);
           api.sendMessage = fcanxSendMsg;
@@ -1348,15 +1348,15 @@ function loginHelper(appState, Cookie, email, password, globalOptions, callback)
           api.OldMessage = require("../src/api/socket/OldMessage")(defaultFuncs, api, ctxMain);
           api.sendMessageDM = (msg, threadID, cb, replyTo) => api.OldMessage(msg, threadID, cb, replyTo, true);
         } catch (e) {
-          logger(`sendMessage shadowx-fca override failed (non-fatal): ${e && e.message ? e.message : String(e)}`, "warn");
+          logger(`sendMessage RAHAT-FCA override failed (non-fatal): ${e && e.message ? e.message : String(e)}`, "warn");
         }
 
-        // listenMqtt override with shadowx-fca version (better MQTT stability)
+        // listenMqtt override with RAHAT-FCA version (better MQTT stability)
         try {
           api.listenMqtt = require("../src/api/socket/listenMqtt")(defaultFuncs, api, ctxMain);
           api.listen = api.listenMqtt;
         } catch (e) {
-          logger(`listenMqtt shadowx-fca override failed (non-fatal): ${e && e.message ? e.message : String(e)}`, "warn");
+          logger(`listenMqtt RAHAT-FCA override failed (non-fatal): ${e && e.message ? e.message : String(e)}`, "warn");
         }
 
         try {
