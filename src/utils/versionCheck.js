@@ -36,9 +36,9 @@ function checkForUpdate(logger) {
     if (err || !latest) return;
     if (compareVersion(current, latest) < 0) {
       if (typeof logger === "function") {
-        logger(`⚡ SHADOWX-FCA update available — v${current} → v${latest}. Upgrade: npm install shadowx-fca@latest`, "warn");
+        logger(`⚡ RAHAT-FCA update available — v${current} → v${latest}. Upgrade: npm install shadowx-fca@latest`, "warn");
       } else {
-        console.warn(`\x1b[33m[SHADOWX-FCA] ⚡ update available — v${current} → v${latest} | npm install shadowx-fca@latest\x1b[0m`);
+        console.warn(`\x1b[33m[RAHAT-FCA] ⚡ update available — v${current} → v${latest} | npm install shadowx-fca@latest\x1b[0m`);
       }
     }
   });
